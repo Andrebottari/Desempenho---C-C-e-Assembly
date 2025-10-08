@@ -31,10 +31,6 @@ Os experimentos incluem rotinas de **PWM**, **manipulação de GPIO** e **opera�
 ---
 
 
-Cada diretório contém o código-fonte referente a uma linguagem específica, com implementações equivalentes das rotinas testadas: **PWM**, **GPIO Toggle** e **operações bit a bit**.
-
----
-
 ## ▶️ Como Executar os Códigos
 
 1. **Abrir o projeto no Microchip Studio**
