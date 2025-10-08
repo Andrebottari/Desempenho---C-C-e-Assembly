@@ -30,57 +30,75 @@ Os experimentos incluem rotinas de **PWM**, **manipulação de GPIO** e **opera�
 
 ---
 
+
+Cada diretório contém o código-fonte referente a uma linguagem específica, com implementações equivalentes das rotinas testadas: **PWM**, **GPIO Toggle** e **operações bit a bit**.
+
+---
+
 ## ▶️ Como Executar os Códigos
 
 1. **Abrir o projeto no Microchip Studio**
-   - Vá em `File → Open → Project/Solution` e selecione o arquivo do código desejado.
+   - Vá em `File → Open → Project/Solution` e selecione o arquivo desejado.
 
 2. **Selecionar o microcontrolador**
    - Certifique-se de que o dispositivo configurado é o **ATmega328P**.
 
 3. **Compilar o código**
-   - Clique em **Build → Build Solution** ou pressione `F7`.  
+   - Clique em **Build → Build Solution** ou pressione `F7`.
    - O compilador **AVR-GCC** gerará o arquivo `.hex` na pasta `Debug` ou `Release`.
 
 4. **Gravar no microcontrolador**
    - Conecte o ATmega328P via **programador ISP**.
-   - Vá em **Tools → Device Programming**, selecione o programador e grave o `.hex`.
+   - Vá em **Tools → Device Programming**, selecione o programador e grave o arquivo `.hex`.
 
 5. **Executar o programa**
-   - Após a gravação, o código será executado automaticamente no microcontrolador.
-   - É possível observar os resultados via osciloscópio (GPIO/PWM) ou comunicação serial (quando disponível).
+   - Após a gravação, o código será executado automaticamente.
+   - Os resultados podem ser observados por osciloscópio (PWM/GPIO) ou via comunicação serial, dependendo do experimento.
 
 ---
 
-## 📊 Experimentos
+## 🤖 Uso de Inteligência Artificial
 
-Cada implementação realiza:
-- **Controle PWM** de motor DC via ponte H (L298N)
-- **Alternância de pino (GPIO Toggle)** com medição de ciclos via `Timer1`
-- **Operações lógicas bit a bit** sobre blocos de memória (AND, OR, NOT)
-
-Os tempos e tamanhos dos binários foram coletados diretamente no hardware real.
+Durante o desenvolvimento deste trabalho, foi utilizada **Inteligência Artificial (IA)** como ferramenta auxiliar para:
+- **Correção de sintaxe** e **formatação** dos códigos em Assembly, C e C++;
+  
+O uso da IA não substituiu o entendimento dos conceitos, mas serviu como apoio técnico e didático no processo de revisão e estruturação.
 
 ---
 
-## 🧠 Resultados Esperados
+## ⚠️ Limitações e Propósito Científico
 
-- **Assembly:** menor tempo e binário mais compacto.  
-- **C:** bom equilíbrio entre desempenho e clareza.  
-- **C++:** maior modularidade com custo moderado.  
-- **Arduino API:** maior overhead e menor eficiência.
+Por se tratar de um **trabalho acadêmico**, este projeto **não é isento de falhas**.  
+Os códigos podem conter **problemas de implementação, otimizações ineficientes ou abordagens incompletas**.  
+Essa imperfeição é **intencionalmente reconhecida** como parte do propósito científico do repositório.
+
+> O objetivo de disponibilizar os códigos, é, justamente, transformar estes em **parâmetros de benchmark** para estudos futuros — permitindo que a comunidade contribua com **correções, otimizações e comparações adicionais**.  
+
+Desse modo, o projeto busca evoluir de um TCC individual para um **repositório colaborativo de pesquisa aplicada em sistemas embarcados**, contribuindo para o avanço da ciência e da engenharia.
 
 ---
+
+## 🧠 Resultados Gerais
+
+- **Assembly:** maior desempenho e menor uso de memória.  
+- **C:** equilíbrio entre eficiência e clareza.  
+- **C++:** modularidade e abstração com custo previsível.  
+- **Arduino API:** simplicidade extrema, porém com alto overhead.
+
+Esses resultados reforçam o impacto das abstrações e a importância de compreender o custo de cada linguagem no contexto embarcado.
+
+---
+
+
 
 ## 📄 Licença
 
-Este projeto é de uso **educacional e acadêmico**.  
-O conteúdo pode ser reproduzido com a devida citação do autor.
+Este repositório é disponibilizado para fins **acadêmicos e científicos**.  
+O conteúdo pode ser reproduzido com a devida citação do autor e da instituição.
 
 ---
 
 **Autor:** André Soares Bottari  
 **Curso:** Engenharia de Computação — UFMT  
 **Orientador:** Prof. Dr. Jésus Franco Bueno  
-**Ano:** 2025
-
+**Ano:** 2025  
